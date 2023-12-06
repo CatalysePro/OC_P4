@@ -1,0 +1,603 @@
+/*****************************************************************************/
+/*********************** START GENARAL SETTING******************************** */
+/*****************************************************************************/
+
+* {
+    
+    box-sizing: border-box;            
+
+                            /*! NECCESSSARY */
+
+}
+
+li {
+
+    list-style-type: none;
+
+}
+
+a {
+
+text-decoration: none;
+color: black
+
+}
+
+
+/*****************************************************************************/
+/*********************** END GENARAL SETTING******************************** */
+/*****************************************************************************/
+
+/*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/*todo oooooooooooooooooooooooooo START CSS LOADER oooooooooooooooooooooooooo */
+/*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+/*? /////////// START INTRO CSS LOADER (with no js main_container will be hidded during the loader animation) /////// */
+
+/** START ELEMENT POSITION SETTINGS */
+
+
+
+body {
+    
+    
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;            
+}
+
+.main_container {      
+
+    border : 2px solid darkgreen;
+                                    /*? SIZING TEST */
+   
+    box-sizing: border-box;
+
+    position: absolute;
+
+     width: 100%;
+    max-width: 768px;
+                           /*? MOBILE FIRST PARAMETER */
+   
+    height: auto;
+
+    
+    padding: 0;
+   
+}
+ 
+  
+  
+  /** END ELEMENT POSITION SETTINGS */
+  
+  
+  /** START CONTAINER INVISIBILITY - VISIBILITY*/
+  
+    
+  /*? /////////// END INTRO CSS LOADER ///////////////////////////////////////////////////////////////////// */
+  
+/*? +++++++++++++++++++++++++++++++++ START ANIMATION LOADER +++++++++++++++++++++++++++++++++++++++++++ */
+
+      
+/*? ++++++++++++++++++++++++++++++++++ END ANIMATION LOADER ++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ START CIRCLE_PIECES §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+
+  
+  /*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ END CIRCLE_PIECES §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+  
+
+/*? =================================== START LETTERS_GROUP & FINAL WORD ================================== */
+  
+  
+  /*? =================================== END LETTERS_GROUP & FINAL WORD ================================== */
+  
+    
+  
+/*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/*todo oooooooooooooooooooooooooo END CSS LOADER oooooooooooooooooooooooooooo */
+/*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+
+/*****************************************************************************/
+/*********************** START REST OF THE CODE **************************** */
+/*****************************************************************************/
+
+/*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+/*? §§§§§§§§§§§§§§§§§§§ START MOBILE FIRST CSS SETTINGS §§§§§§§§§§§§§§§§§§§§ */
+/*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+
+header {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;      /*! TO BE VALIDATED */
+
+    
+    align-items: center;                /*! TO BE VALIDATED */
+
+    margin: 20px 0px 15px 0px;
+
+        
+}
+
+header .logo {
+
+    width: 197px;
+    height: 36px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;            /*! TO BE VALIDATED */
+
+    /* align-content: center; */
+    /* align-items: center; */
+
+    margin: 0px 0px 0px 0px;
+
+    border: 1px solid green;
+
+}
+
+.presentation_block {
+
+    width: 100%;
+
+    /* padding: 0px 5px 0px 5px; */
+
+
+}
+
+.location {
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;            /*! TO BE VALIDATED */
+
+    
+    align-items: center;                /*! TO BE VALIDATED */
+
+    background-color: #EAEAEA;
+
+    font-size: 16px;
+
+    box-shadow: inset 0px 5px 5px 0px #dddd;
+
+}
+
+.location i {
+
+    margin-right: 20px;
+}
+
+
+.search_field {
+
+    width: 120px;
+
+    /* padding: auto; */
+
+    border: none;
+
+    background-color: pink;         /*! TO BE ADAPTED */
+
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.introduction_block {
+
+    width: 100%;
+    /* height: 63px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;            /*! TO BE VALIDATED */
+
+    padding: 20px 20px 20px 20px;
+
+    border: 1px solid orange;
+                                        /*? SIZING TEST */
+   
+}
+
+
+.titles {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     /*! TO BE VALIDATED */
+    /* flex-wrap: wrap; */
+
+    align-items: center;                /*! TO BE VALIDATED */
+
+    text-align: center;
+
+    margin: 0px 0px 0px 0px;
+}
+
+.titles h1 {
+
+    width: 275px;
+
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+
+    margin: 0px 0px 0px 0px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    border: 1px solid brown;
+                                    /*? SIZING TEST */
+}
+
+
+.titles p {
+
+    width: 315px;
+
+    margin: 10px 0px 0px 0px;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    border: 1px solid greenyellow;
+                                    /*? SIZING TEST */
+
+}
+
+.explore_btn_block {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;            /*! TBV */
+    
+    flex-wrap: nowrap;      /*! TBV */
+
+    margin: 20px 0px 0px 0px;
+
+    /* padding: 10px; */
+
+    border: 1px solid red;
+                                /*? SIZING TEST */
+
+    /* border-radius: 25%; */
+
+}
+
+.explore_btn_block button {
+
+    padding: 10px 10px 10px 10px;
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    font-size: 15px;                /** vs 16px on figma */
+   
+    font-weight: bold;             /** vs font-weight: 500px;  on figma*/  
+
+    background-image: linear-gradient(to top,#9747FF, #9356DC,#FF79DA);  
+
+    color: #ffff;
+
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+
+}
+
+.explore_btn_block button:hover {
+
+    background-color: #AE80E5;
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px #000;
+
+}
+
+
+.process {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     /*! TBV */
+    /* flex-wrap: wrap; */
+
+    padding: 20px 20px 20px 20px;
+}
+
+
+.process_step {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    /*! TBV */
+    
+    align-items: center;    /*! TBV */
+
+    flex-wrap: nowrap;  /*! TBV */
+
+    padding: 10px;
+
+    border: 1px solid red;
+                                /*? SIZING TEST */
+
+}
+
+.step_nb {
+
+    position: absolute;
+
+    margin: 0px 0px 0px -12px;
+
+    padding: 5px 10px 5px 10px;
+
+    font-size: 14.18px;
+    font-weight: 500;
+
+    border-radius: 100%;
+
+    background-color: #9356DC;
+
+    color:#ffff;
+
+}
+
+.process_step a {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    /*! TBV */
+    
+
+    padding: 20px;
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    background-color: #F6F6F6;
+
+    border: 1px solid blue;
+                                /*? SIZING TEST */
+}
+
+
+.process_btn i {
+
+    margin: 0px 10px 0px 10px;
+
+}
+
+.savour i {
+
+     color: #9356DC;
+}
+
+.restaurants_list {
+
+    width:100%;
+
+    margin-top: 20px;
+
+    padding: 0px 5px 0px 5px; 
+
+}
+
+.restaurants_list a {
+
+
+    width: auto;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-radius: 15px;
+
+    margin: 20px 10px 20px 10px ;
+    
+    background-color: grey;
+
+
+}
+
+.bubble_new {
+
+    
+    width: 80px;
+
+    text-align: center;
+
+    position: absolute;
+
+    margin-top: -235px;         /*! TBV */
+    margin-left: 235px;
+
+
+    border: 5px solid  #99E2D0;
+    background-color: #99E2D0;
+    color: #008766;
+
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+
+.card img {
+
+width: 100%;
+max-height: 190px;
+
+object-fit: cover;              
+                    /*! TBV */
+
+
+margin-bottom: 0px;
+
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+
+}
+
+
+.card_content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*! TBV */
+    align-content: center;          /*! TBV */
+    align-items: center;            /*! TBV */
+
+    
+    padding: 5px 15px 5px 10px;
+
+    border: 1px solid royalblue;
+                                    /*? SIZING TEST */
+
+}
+
+
+.card_txt {
+
+    margin-top: -10px;
+    margin-bottom: 2px;
+
+}
+
+.card_txt p {
+
+    margin-top: -10px;
+
+}
+
+.heart_to_fill {
+  
+  position:  relative;
+  
+  transition: background-color 0.3s ease;
+  
+ 
+}
+
+
+.fill_it:before {
+  content:'';
+  
+  position:absolute;
+
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  
+  background-color: green;
+                                  /*  linear-gradient(to top,#9747FF, #9356DC,#FF79DA); */
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  
+  
+}
+  
+  
+.fill_it:hover:before {
+  opacity: 1;
+}
+
+
+footer {
+
+width: 100%;
+
+padding: 20px, 0px, 40px, 5px;
+
+background-color:  #353535;
+
+
+}
+
+footer img {
+
+    width: 139px;
+    height: 27px;
+    
+    margin: 20px 0px 10px 40px;
+
+
+    filter: invert(100%);                   /** LOGO COLOR INVERSION  */
+    -webkit-filter: invert(100%);
+}
+
+
+footer a {
+
+    color: #ffff;
+
+}
+
+footer nav {
+
+padding: 0px 0px 20px 0px;
+
+}
+
+footer li {
+
+    padding: 0px 0px 10px 0px;
+
+}
+
+footer i {
+
+    margin-right: 20px;
+}
+
+footer .footer_icon_1 {
+
+    width: 11px;
+    height: 13px;
+
+}
+
+footer .footer_icon_2 {
+
+    width: 11.92px;
+    height: 13px;
+
+}
+
+
+
+@media (max-width: 1023.98px) {
+    
+
+}
+
+@media (min-width: 1024px) {
+    
+
+}

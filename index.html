@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- defines the encoding standard used for interpreting special & multilingual characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- defines the view configuration (viewport) for mobile phones and indicates to the browser 
+        to adapt the width of the webpage at the width of the device screen at an initial scale of 1-->
+
+    <title>Oh my Food</title> <!-- Tab title appearing on the top of the tab ... 
+        an icon could be added next to this title via another code line-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- indicates that there is a preconnection to a website when the page is downloaded; here the font database of Google -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- complementary to the previous line by specifying that the request of the font dowloading can be done even if 
+        the webpage(s) domain or protocol(s) are différent (crossorigin)  -->
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- here it indicates the external resource and the transmission modalities 
+            for the icons to be  mentioned in the html code and to be treated by the css style sheet -->
+
+    <link href="https : //fonts.googleapis.com/css2?family= Roboto+Mono:wght@500 & display =swap" rel="stylesheet">
+    <!--link for a specific font here : Roboto font used for tyhe entire main_container-->
+        
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!--link for a specific font here : Shrikhand font of the logo used for the loader-->
+
+
+    <link rel="stylesheet" href="./css/style.css"> 
+                                <!-- Refers to style file which will be applied -->
+   
+
+</head>
+
+
+
+<body>
+
+    
+    <div class="main_container"> 
+
+        <header>  
+            <a href="#" class="logo"><img src="images/logo/ohmyfood.png" alt="Logo ohmyfood"></a>
+            
+        <div> </div>
+        </header> 
+
+        <div class="presentation_block"> <!-- START PRESENTATION BLOCK-->
+
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" class="search_field" placeholder="Ville & quartier" value="Paris, Belleville">
+            </div> <!-- CLOSE location-->
+            
+            <div class="introduction_block">
+
+            <div class="titles">
+                <h1>Réservez le menu qui vous convient </h1>
+                <p>Découvrez des restaurants d'exception sélectionnés par nos soins </p>
+            </div> <!-- CLOSE titles-->
+
+            <div class="explore_btn_block">
+                <button class="explore_btn">Explorer nos restaurants</button>
+            </div> <!-- CLOSE explore_btn-->
+
+            </div> <!-- CLOSE INTRO BLOCK-->
+
+            <div class="process">
+
+                <div class= "process_step step_1on3">
+                    <span class="step_nb number_1">1</span>
+                    <a href="#" class="process_btn select" ><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></a>
+                </div> <!-- close step_1on3 -->
+
+                <div class= "process_step step_2on3">
+                    <span class="step_nb number_2">2</span>
+                    <a href="#" class="process_btn compose" ><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></a>
+                </div> <!-- close step_2on3 -->
+
+                <div class= "process_step step_3on3">
+                    <span class="step_nb number_3">3</span>
+                    <a href="#" class="process_btn savour" ><i class="fa-solid fa-store"></i><span>Dégustez restaurant</span></a>
+                </div> <!-- close step_3on3 -->
+
+            </div> <!-- CLOSE PROCESS BLOCK-->
+
+        </div> <!-- CLOSE PRESENTATION BLOCK-->
+
+            <div class="restaurants_list">
+
+                <a href="restaurants/la_pallette_du_gout.html"> <!-- Restaurant 1on4 -->
+                    <span class="bubble_new">Nouveau</span>
+                    <article class="card">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat cuisine moderne assiette ronde sur table pour deux vue en perspective tenue par une main de femme dans un restaurant français à Paris">
+                        <div class="card_content">
+                            <div class="card_txt">
+                                <h3 class="card_title">La pallete du goût</h3>
+                                <p class="card_subtitle">Ménilmontant</p>
+                            </div>
+                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                        </div> <!-- close card_content-->
+                    </article>
+                </a>
+
+                <a href="restaurants/la_note_enchantee.html"> <!-- Restaurant 2on4 -->
+                    <span class="bubble_new">Nouveau</span>
+                    <article class="card">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat xxxx cuisine française moderne sur table xxxxx vue en perspective dans un restaurant à Paris">
+                        <div class="card_content">
+                            <div class="card_txt">
+                                <h3 class="card_title">La note enchantée</h3>
+                                <p class="card_subtitle">Charonne</p>
+                            </div>
+                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                        </div> <!-- close card_content-->
+                    </article>
+                </a>
+
+                <a href="restaurants/a_la_francaise.html"> <!-- Restaurant 3on4 -->
+                    
+                    <article class="card">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat xxxx cuisine française moderne sur table xxxxx vue en perspective dans un restaurant à Paris">
+                        <div class="card_content">
+                            <div class="card_txt">
+                                <h3 class="card_title">À la française</h3>
+                                <p class="card_subtitle">Citée rouge</p>
+                            </div>
+                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                        </div> <!-- close card_content-->
+                    </article>
+                </a>
+
+                <a href="restaurants/le_delice_des_sens.html"> <!-- Restaurant 4on4 -->
+                    
+                    <article class="card">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat poisson cuisine asiatique moderne sur table collective vue en perspective dans un restaurant français à Paris">
+                        <div class="card_content">
+                            <div class="card_txt">
+                                <h3 class="card_title">Le délice des sens</h3>
+                                <p class="card_subtitle">Folie-Méricourt</p>
+                            </div>
+                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                        </div> <!-- close card_content-->
+                    </article>
+                </a>
+
+            </div> <!-- CLOSE RESTAURANTS LIST-->
+
+        </main>
+
+        <footer> 
+            <div class="footer_elements"> 
+                   
+                <a href="#" class="logo"><img src="images/logo/ohmyfood.png" alt="Logo ohmyfood"></a>
+                <nav> 
+                    <!-- <h3 class="footer_list_title">ohmyfood</h3> -->
+                    <ul>
+                        <li><a href="#"><i class="footer_icon_1 fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="footer_icon_2 fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </footer> 
+
+    </div> <!--CLOSE MAIN-CONTAINER -->
+
+</body>
+
+</html>
