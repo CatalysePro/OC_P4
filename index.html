@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <!-- complementary to the previous line by specifying that the request of the font dowloading can be done even if 
-        the webpage(s) domain or protocol(s) are différent (crossorigin)  -->
+        the webpage(s) domain or protocol(s) are diffrent (crossorigin)  -->
 
         
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -34,7 +34,8 @@
 
     <link rel="stylesheet" href="./css/style.css"> 
                                 <!-- Refers to style file which will be applied -->
-   
+
+     
 
 </head>
 
@@ -42,11 +43,40 @@
 
 <body>
 
-    
+    <div class="full_loader">
+        
+        <div class="loader_elements">
+          
+          <div class="circles_group">
+
+          <div class="circle_animation"></div>
+          <div class="circle_piece_1"></div>
+          <div class="circle_piece_2"></div>
+          <div class="circle_piece_3"></div>
+          <div class="circle_piece_4"></div>
+
+          </div> 
+          
+          <a class="letters_groups">
+          <span class="letters_group_1">Oh</span>
+          <span class="letters_group_2">my</span>
+          <span class="letters_group_3">food</span>
+          <span class="final_word">Ohmyfood</span>
+          
+          </a> 
+
+          
+        </div> 
+      
+    </div> 
+
+    <!-- end full_loader-->
+      
+
     <div class="main_container"> 
 
         <header>  
-            <a href="#" class="logo"><img src="images/logo/ohmyfood.png" alt="Logo ohmyfood"></a>
+            <a href="#" class="logo"><img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"></a>
             
         <div> </div>
         </header> 
@@ -73,6 +103,10 @@
 
             <div class="process">
 
+                <h2>Fonctionnement</h2>
+
+                <div class="steps_block">
+
                 <div class= "process_step step_1on3">
                     <span class="step_nb number_1">1</span>
                     <a href="#" class="process_btn select" ><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></a>
@@ -85,14 +119,22 @@
 
                 <div class= "process_step step_3on3">
                     <span class="step_nb number_3">3</span>
-                    <a href="#" class="process_btn savour" ><i class="fa-solid fa-store"></i><span>Dégustez restaurant</span></a>
+                    <a href="#" class="process_btn savour" ><i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span></a>
                 </div> <!-- close step_3on3 -->
+
+                </div> <!-- close step_block -->
 
             </div> <!-- CLOSE PROCESS BLOCK-->
 
         </div> <!-- CLOSE PRESENTATION BLOCK-->
 
             <div class="restaurants_list">
+
+                <h2>Restaurants</h2>
+
+                <div class="cards_block">
+
+            <div class="cards_sub-block cards_sub-block_1on2">
 
                 <a href="restaurants/la_pallette_du_gout.html"> <!-- Restaurant 1on4 -->
                     <span class="bubble_new">Nouveau</span>
@@ -103,7 +145,10 @@
                                 <h3 class="card_title">La pallete du goût</h3>
                                 <p class="card_subtitle">Ménilmontant</p>
                             </div>
-                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                            <div class="hearts_pair">
+                                <div class="empty_heart"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                                <div class="full_heart"><i class="leave_it fa-solid fa-heart fa-2xl"></i></div>
+                            </div>
                         </div> <!-- close card_content-->
                     </article>
                 </a>
@@ -111,27 +156,36 @@
                 <a href="restaurants/la_note_enchantee.html"> <!-- Restaurant 2on4 -->
                     <span class="bubble_new">Nouveau</span>
                     <article class="card">
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat xxxx cuisine française moderne sur table xxxxx vue en perspective dans un restaurant à Paris">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat cuisine française moderne sur table garnie vue en perspective dans un restaurant à Paris">
                         <div class="card_content">
                             <div class="card_txt">
                                 <h3 class="card_title">La note enchantée</h3>
                                 <p class="card_subtitle">Charonne</p>
                             </div>
-                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                            <div class="hearts_pair">
+                                <div class="empty_heart"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                                <div class="full_heart"><i class="leave_it fa-solid fa-heart fa-2xl"></i></div>
+                            </div>
                         </div> <!-- close card_content-->
                     </article>
                 </a>
+            </div> <!-- close cards_sub-block_1on2 -->
+
+            <div class="cards_sub-block cards_sub-block_2on2">
 
                 <a href="restaurants/a_la_francaise.html"> <!-- Restaurant 3on4 -->
                     
                     <article class="card">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat xxxx cuisine française moderne sur table xxxxx vue en perspective dans un restaurant à Paris">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat cuisine française moderne sur table garnie vue en perspective dans un restaurant à Paris">
                         <div class="card_content">
                             <div class="card_txt">
                                 <h3 class="card_title">À la française</h3>
                                 <p class="card_subtitle">Citée rouge</p>
                             </div>
-                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                            <div class="hearts_pair">
+                                <div class="empty_heart"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                                <div class="full_heart"><i class="leave_it fa-solid fa-heart fa-2xl"></i></div>
+                            </div>
                         </div> <!-- close card_content-->
                     </article>
                 </a>
@@ -145,30 +199,39 @@
                                 <h3 class="card_title">Le délice des sens</h3>
                                 <p class="card_subtitle">Folie-Méricourt</p>
                             </div>
-                            <div class="heart_to_fill"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                            <div class="hearts_pair">
+                                <div class="empty_heart"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                                <div class="full_heart"><i class="leave_it fa-solid fa-heart fa-2xl"></i></div>
+                            </div>
                         </div> <!-- close card_content-->
                     </article>
                 </a>
+            </div> <!-- close cards_sub-block_2on2 -->
+
+                </div> <!-- close cards_block-->
 
             </div> <!-- CLOSE RESTAURANTS LIST-->
 
-        </main>
+        
 
         <footer> 
             <div class="footer_elements"> 
                    
-                <a href="#" class="logo"><img src="images/logo/ohmyfood.png" alt="Logo ohmyfood"></a>
+                <a href="#" class="logo"><img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"></a>
+
+            <div class="footer_menu">
                 <nav> 
-                    <!-- <h3 class="footer_list_title">ohmyfood</h3> -->
+                    
                     <ul>
-                        <li><a href="#"><i class="footer_icon_1 fas fa-utensils"></i>Proposer un restaurant</a></li>
-                        <li><a href="#"><i class="footer_icon_2 fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                        <li class="menu_element menu_element_1on4"><a href="#"><i class="footer_icon_1 fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li class="menu_element menu_element_2on4"><a href="#"><i class="footer_icon_2 fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                        <li class="menu_element menu_element_2on4"><a href="#">Mentions légales</a></li>
+                        <li class="menu_element menu_element_4on4"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                     </ul>
                 </nav>
+            </div> <!--close footer_menu -->
 
-            </div>
+            </div> <!--CLOSE footer_elements -->
 
         </footer> 
 

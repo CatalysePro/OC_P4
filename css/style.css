@@ -1,3 +1,9 @@
+/*? **************************************************************************/
+/*? **********************   OMF HOME PAGE STYLE    ************************* */
+/*? ***************************************************************************/
+
+
+
 /*****************************************************************************/
 /*********************** START GENARAL SETTING******************************** */
 /*****************************************************************************/
@@ -23,7 +29,6 @@ color: black
 
 }
 
-
 /*****************************************************************************/
 /*********************** END GENARAL SETTING******************************** */
 /*****************************************************************************/
@@ -40,6 +45,8 @@ color: black
 
 body {
     
+    /* border : 5px solid black; */
+
     
     width: 100%;
     height: auto;
@@ -50,12 +57,15 @@ body {
     margin: 0;
     padding: 0;
 
+    /* overflow: hidden; */
+                                /*! NO EFFECT */
+
     font-family: "Roboto", sans-serif;            
 }
 
 .main_container {      
 
-    border : 2px solid darkgreen;
+    /* border : 2px solid darkgreen; */
                                     /*? SIZING TEST */
    
     box-sizing: border-box;
@@ -63,45 +73,383 @@ body {
     position: absolute;
 
      width: 100%;
-    max-width: 768px;
+    max-width: 767.98px;
                            /*? MOBILE FIRST PARAMETER */
    
     height: auto;
 
     
+
     padding: 0;
    
 }
- 
-  
-  
-  /** END ELEMENT POSITION SETTINGS */
-  
-  
-  /** START CONTAINER INVISIBILITY - VISIBILITY*/
-  
-    
-  /*? /////////// END INTRO CSS LOADER ///////////////////////////////////////////////////////////////////// */
-  
-/*? +++++++++++++++++++++++++++++++++ START ANIMATION LOADER +++++++++++++++++++++++++++++++++++++++++++ */
 
-      
-/*? ++++++++++++++++++++++++++++++++++ END ANIMATION LOADER ++++++++++++++++++++++++++++++++++++++++++++ */
+
+.full_loader {
+
+
+width: 100%;
+
+border : 3px solid #9747FF;
+background-color: #f0b8f5;
+
+position: relative;
+
+z-index: 9999;
+
+height: 100vh;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+}
+
+.loader_elements {
+
+position: relative;
+
+width: 100%;
+height: 100%;
+  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.circles_group {
+
+position: absolute;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+transform: translate(-50%, -50%);
+
+}
+
+.circle_animation {
+
+position: absolute;
+
+transform: translate(-50%, -50%);
+                                  /** centered verticalay & horizontaly in the parent container */
+
+width: 200px;
+height: 200px;
+
+border: 10px solid transparent;
+border-radius: 50%;
+
+background-color: transparent;
+}
+
+.circle_piece_1, .circle_piece_2, .circle_piece_3, .circle_piece_4 {
+
+position: absolute;
+
+z-index: 9999;
+
+width: 200px;
+height: 200px;
+
+border: 10px solid transparent;
+border-radius: 50%;
+
+/* border-right-color: yellow; */
+                                  /**  put in animation block here under*/
+
+background-color: transparent;
+}
+
+.letters_groups,
+.final_word {
+
+position: absolute;
+
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: row;
+justify-content: center; 
+align-items: center;
+                      /** THIS ONE CENTERS IN THE MIDDLE OF THE CIRCLES */
+
+
+}
+
+
+.letters_groups span {
+
+/* color: red; */
+font-size: 24px; 
+
+position: absolute;
+                    /** THIS ONE WITH THE FOLLOWING SUPEPOSE THE CHILDS OF LETTERS_GROUP */
+
+display: flex;
+flex-direction: row;
+justify-content: center; 
+align-items: center;
+
+
+}
+
+
+/** END ELEMENT POSITION SETTINGS */
+
+
+/** START CONTAINER INVISIBILITY - VISIBILITY*/
+
+
+
+.main_container {
+  opacity: 1;
+  animation: fadeOutIn 0.5s linear forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0;
+ 
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+
+/** END CONTAINER INVISIBILITY - VISIBILITY*/
+
+/** START LOADER VISIBILITY - INVISIBILITY*/
+
+.full_loader {
+  opacity: 1;
+  animation: fadeOut 0.5s linear forwards;
+  animation-delay: 4.2s;
+
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    /* color: transparent; */
+  }
+}
+
+/** END LOADER VISIBILITY - INVISIBILITY*/
+
+/*? /////////// END INTRO CSS LOADER ///////////////////////////////////////////////////////////////////// */
+
+/*? +++++++++++++++++++++++++++++++++ START CIRCLE_ANIMATION  +++++++++++++++++++++++++++++++++++++++++++ */
+
+
+:root {
+--circle-piece-color: #9356DC;
+--circle-animation-background-color: transparent;
+--circle-animation-color: #FF79DA;
+--all-circles-background-color: transparent;
+;
+                                   
+}
+
+
+.circle_animation {
+
+  border-top-color: var(--circle-animation-color);
+
+  animation: drawCircle_1 4s forwards; 
+
+}
+
+@keyframes drawCircle_1 {
+  0% {
+    transform: rotate(0deg);
+  
+  }
+  
+  25% {
+    transform: rotate(45deg);
+
+  }
+  
+  50% {
+    transform: rotate(180deg);
+
+  }
+  
+  75% {
+    transform: rotate(270deg);
+
+  }
+  100% {
+    transform: rotate(450deg);
+
+  }
+}
+
+
+/*? ++++++++++++++++++++++++++++++++++ END CIRCLE_ANIMATION ++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 /*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ START CIRCLE_PIECES §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
 
-  
-  /*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ END CIRCLE_PIECES §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
-  
+
+.circle_piece_1 {
+
+border-right-color: var(--circle-piece-color);
+
+opacity: 0;
+visibility: hidden;
+
+animation: reveal 1s forwards;
+animation-delay: 1s;
+}
+
+
+.circle_piece_2 {
+
+border-bottom-color: var(--circle-piece-color);
+
+opacity: 0;
+visibility: hidden;
+
+animation: reveal 1s forwards;
+animation-delay: 1.7s;
+}
+
+.circle_piece_3 {
+
+border-left-color: var(--circle-piece-color);
+
+opacity: 0;
+visibility: hidden;
+
+animation: reveal 1s forwards;
+animation-delay: 2.7s;
+}
+
+
+.circle_piece_4 {
+
+border-top-color: var(--circle-piece-color);
+
+opacity: 0;
+visibility: hidden;
+
+animation: reveal 1s forwards;
+animation-delay: 3.1s;
+}
+
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+}
+
+/*? §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ END CIRCLE_PIECES §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+
+
 
 /*? =================================== START LETTERS_GROUP & FINAL WORD ================================== */
-  
-  
-  /*? =================================== END LETTERS_GROUP & FINAL WORD ================================== */
-  
-    
-  
+
+/* @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); */
+/*! font  Import do not work ----> via html sheet*/
+
+.letters_groups {
+
+font-family: 'Shrikhand', serif;
+
+}
+
+.letters_group_1 {
+display: inline-block;
+opacity: 0;
+visibility: hidden;
+animation: zoomInAndOut 1s ease-in-out forwards;
+}
+
+.letters_group_2 {
+display: inline-block;
+opacity: 0;
+visibility: hidden;
+animation: zoomInAndOut 1s ease-in-out forwards;
+animation-delay: 1s;
+}
+
+.letters_group_3 {
+display: inline-block;
+opacity: 0;
+visibility: hidden;
+animation: zoomInAndOut 1s ease-in-out forwards;
+animation-delay: 2s;
+}
+
+@keyframes zoomInAndOut {
+0% {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+50% {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.2);
+}
+100% {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1);
+}
+}
+
+
+.final_word {
+display: inline-block;
+opacity: 0;
+visibility: hidden;
+animation: zoomIn 1s ease-in-out forwards;
+animation-delay: 3s;
+}
+
+@keyframes zoomIn {
+0% {
+ opacity: 0;
+ visibility: hidden;
+ transform: scale(0);
+}
+
+100% {
+ opacity: 1;
+ visibility: visible;
+ transform: scale(1.2);
+}
+}
+
+
+/*? =================================== END LETTERS_GROUP & FINAL WORD ================================== */
+
+
+
 /*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
 /*todo oooooooooooooooooooooooooo END CSS LOADER oooooooooooooooooooooooooooo */
 /*todo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
@@ -146,7 +494,8 @@ header .logo {
 
     margin: 0px 0px 0px 0px;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
+                                /*? SIZING TEST */
 
 }
 
@@ -168,7 +517,7 @@ header .logo {
     flex-direction: row;
     justify-content: center;            /*! TO BE VALIDATED */
 
-    
+    /* align-content: center; */
     align-items: center;                /*! TO BE VALIDATED */
 
     background-color: #EAEAEA;
@@ -193,7 +542,7 @@ header .logo {
 
     border: none;
 
-    background-color: pink;         /*! TO BE ADAPTED */
+    background-color: #EAEAEA;         
 
     font-size: 16px;
     font-weight: 500;
@@ -209,9 +558,11 @@ header .logo {
     flex-direction: column;
     justify-content: center;            /*! TO BE VALIDATED */
 
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 40px 20px;
+    
+    background-color: #F6F6F6;
 
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
                                         /*? SIZING TEST */
    
 }
@@ -221,7 +572,7 @@ header .logo {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;     /*! TO BE VALIDATED */
+    justify-content: space-around;     /*! TO BE VALIDATED */
     /* flex-wrap: wrap; */
 
     align-items: center;                /*! TO BE VALIDATED */
@@ -246,7 +597,7 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
                                     /*? SIZING TEST */
 }
 
@@ -260,7 +611,9 @@ header .logo {
     font-size: 18px;
     font-weight: 300;
 
-    border: 1px solid greenyellow;
+    color:#353535;
+
+    /* border: 1px solid greenyellow; */
                                     /*? SIZING TEST */
 
 }
@@ -277,7 +630,7 @@ header .logo {
 
     /* padding: 10px; */
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
                                 /*? SIZING TEST */
 
     /* border-radius: 25%; */
@@ -292,8 +645,8 @@ header .logo {
     border-radius: 30px;
 
     font-size: 15px;                /** vs 16px on figma */
-   
-    font-weight: bold;             /** vs font-weight: 500px;  on figma*/  
+    /* font-weight: 500px; */
+    font-weight: bold;              /*! TBV */
 
     background-image: linear-gradient(to top,#9747FF, #9356DC,#FF79DA);  
 
@@ -319,12 +672,43 @@ header .logo {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;     /*! TBV */
-    /* flex-wrap: wrap; */
+    
+    /* justify-content: center; */
+    /* justify-items: center; */
+     
+    flex-wrap: wrap;
 
     padding: 20px 20px 20px 20px;
+
+    /* border: 1px solid darkorchid; */
+                                    /*? SIZING TEST */
+
 }
 
+
+.steps_block {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    /* border: 1px solid darkorchid; */
+                                        /*? SIZING TEST */
+}
+
+.process h2 {
+
+    width: 100%;
+
+    text-align: left;
+    margin: 0;
+    padding: 20px 20px 20px 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
 
 .process_step {
 
@@ -338,7 +722,7 @@ header .logo {
 
     padding: 10px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
                                 /*? SIZING TEST */
 
 }
@@ -358,6 +742,7 @@ header .logo {
 
     background-color: #9356DC;
 
+    /* font-size: 24px; */
     color:#ffff;
 
 }
@@ -369,16 +754,18 @@ header .logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;    /*! TBV */
-    
+    /* flex-wrap: nowrap; */
 
     padding: 20px;
 
     border: 1px solid transparent;
-    border-radius: 30px;
-
+    border-radius: 18px;
+                                        /*! TBV */
     background-color: #F6F6F6;
+    box-shadow: 2px 2px 4px grey; 
+                                        /*! TBV */
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
                                 /*? SIZING TEST */
 }
 
@@ -400,12 +787,42 @@ header .logo {
 
     margin-top: 20px;
 
-    padding: 0px 5px 0px 5px; 
+    padding: 30px 5px 30px 5px; 
+
+    background-color: #F6F6F6;
+
+}
+
+
+.restaurants_list h2 {
+
+    text-align: left;
+    margin: 0;
+    padding: 20px 20px 20px 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cards_block {
+
+    /* width: 100% */
+    /* border: 2px solid darkgray; */
+    /* background-color: pink; */
+                                        /*? SIZING TEST */
+
+}
+
+.cards_sub-block {
+
+    
+    /* border: 2px solid orange; */
+                                    /*? SIZING TEST */
 
 }
 
 .restaurants_list a {
 
+    /* width: 100%; */
 
     width: auto;
     height: auto;
@@ -419,9 +836,12 @@ header .logo {
 
     margin: 20px 10px 20px 10px ;
     
-    background-color: grey;
+    /* padding: 0px 15px 0px 15px; */
 
+    /* border-radius: 20px; */
 
+    background-color: #FFFF;
+                              
 }
 
 .bubble_new {
@@ -433,9 +853,12 @@ header .logo {
 
     position: absolute;
 
-    margin-top: -235px;         /*! TBV */
+    margin-top: -235px;         
+                                /*! TBV */
+                                /*! LINKED TO IMG HEIGHT*/
     margin-left: 235px;
 
+    /* padding: 5px 10px 5px 10px; */
 
     border: 5px solid  #99E2D0;
     background-color: #99E2D0;
@@ -450,11 +873,17 @@ header .logo {
 .card img {
 
 width: 100%;
-max-height: 190px;
+max-height: 220px;
+                      /*! LINKED TO BUBBLE NEGATIVE TOP-MARGIN*/
 
 object-fit: cover;              
                     /*! TBV */
 
+/* object-position: top 40px right 0px; */
+                                              /*! NOT APPROPRIATE*/
+
+/* border-image-slice: 10% 0% 0% 0%; */
+                                                /*!  NOT APPROPRIATE*/
 
 margin-bottom: 0px;
 
@@ -468,14 +897,17 @@ border-top-right-radius: 15px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /*! TBV */
-    align-content: center;          /*! TBV */
-    align-items: center;            /*! TBV */
+    justify-content: space-between; 
+                                      /*! TBV */
+    align-content: center;          
+                                    /*! TBV */
+    align-items: center;            
+                                    /*! TBV */
 
     
     padding: 5px 15px 5px 10px;
 
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
                                     /*? SIZING TEST */
 
 }
@@ -494,39 +926,75 @@ border-top-right-radius: 15px;
 
 }
 
-.heart_to_fill {
+
+.hearts_pair {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  position:  relative;
+  margin-right: 25px;
+}
+
+.empty_heart,
+.full_heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fill_it,
+.leave_it {
   
-  transition: background-color 0.3s ease;
-  
- 
+  position: relative;
+
 }
 
 
-.fill_it:before {
-  content:'';
-  
-  position:absolute;
+/** ====================================== START INITIAL STYLE CODE HEARTS DIV ================================================ */
 
-  bottom:0;
-  top:0;
-  left:0;
-  right:0;
-  
-  background-color: green;
-                                  /*  linear-gradient(to top,#9747FF, #9356DC,#FF79DA); */
+/* 
+.leave_it {
+  color: #9356DC;
   opacity: 0;
-  z-index: -1;
-  transition: opacity 0.3s ease;
-  
-  
+  transition: opacity 1s;
 }
-  
-  
-.fill_it:hover:before {
+
+
+.hearts_pair:hover .leave_it {
   opacity: 1;
+  
 }
+ */
+
+/** ====================================== END INITIAL STYLE CODE HEARTS DIV ================================================ */
+
+
+/* todo ++++++++++++++++++++++++++++++++++ START NEW STYLE CODE HEARTS DIV ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.leave_it {
+
+    /* color: linear-gradient(to top,#9747FF, #9356DC,#FF79DA); */
+    color: #9356DC;
+    opacity: 0;
+    transform-origin: bottom; /* origin of the start of the transformation or use % : 2 values for horizontal and verticam  */
+    transform: scaleY(0); /* vertical scale initializing at 0, that hides the element */
+    transition: opacity 0.5s, transform 0.5s; /*  'transform' is combined to the opacity in the same (or not) duration */
+  }
+  
+  .hearts_pair:hover .leave_it {
+    opacity: 1;
+    transform: scaleY(1); /* vertical scale at 1 for element appearance during hover  
+                            -- when hover stops, effect is stopped at its current state 
+                            and progressively return at initial scale */
+    
+  }
+  
+
+
+/* todo ++++++++++++++++++++++++++++++++++ END NEW STYLE CODE HEARTS DIV ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 footer {
@@ -547,6 +1015,11 @@ footer img {
     
     margin: 20px 0px 10px 40px;
 
+    /* padding: 0px, 1.42px, 0px, 0px; */
+    
+    /* gap: 10px; */
+    
+    /* color: white; */
 
     filter: invert(100%);                   /** LOGO COLOR INVERSION  */
     -webkit-filter: invert(100%);
@@ -590,14 +1063,200 @@ footer .footer_icon_2 {
 
 }
 
+/*? **************************************************************************************************** */
+/*? ************************************    START  TABLET MEDIA QUERIES     **************************** */
+/*? **************************************************************************************************** */
 
 
-@media (max-width: 1023.98px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    .titles h1, .titles p {
+        width: 100%;
+    }
+
+    .steps_block {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+
+    .process {
+        width: 100%;
+    }
+
+    .process span {
+        font-size: 13px;
+    }
+
+    .cards_block {
+
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-around;
+
+      flex-wrap: wrap;
+  }
+
+  .cards_sub-block {
+
+      width: 100%;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .restaurants_list a {
+
+      width: 100%;
+
+  }
+
+  .bubble_new {
+
+    margin-top: -255px;
+    margin-left: 260px;
     
+}
 
 }
 
-@media (min-width: 1024px) {
+/*? **************************************************************************************************** */
+/*? ************************************    END  TABLET MEDIA QUERIES     ****************************** */
+/*? **************************************************************************************************** */
+
+
+/** **************************************************************************************************** */
+/** ************************************    START  LAPTOP MEDIA QUERIES     **************************** */
+/** **************************************************************************************************** */
+
+
+@media only screen and (min-width: 1024px) {
     
+    .main_container, .full_loader {
+        max-width: 1440px;
+    }
+
+    .titles h1, .titles p {
+        width: 100%;
+    }
+
+     
+    .steps_block {
+        
+        width: 97%;
+        flex-direction: row;
+        justify-content: space-between;
+  }
+
+    
+    .process, .restaurants_list {
+        width: 100%;
+        padding: 50px 180px 50px 180px;
+    }
+
+
+    .restaurants_list h2 {
+
+      padding: 20px 20px 20px 5px;
+
+    }
+
+
+    .cards_block {
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+    }
+
+    .cards_sub-block {
+
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .restaurants_list a {
+
+        width: 100%;
+
+    }
+
+    .bubble_new {
+
+        margin-top: -255px;
+        margin-left: 415px;
+        
+    }
+
+
+    footer {
+
+        padding: 30px 25px 30px 25px;
+
+
+   }
+    .footer_elements {
+
+        display: flex;
+        flex-direction: row-reverse;
+        /* align-items: center; */
+        margin-right: 20px;
+
+    }
+
+    
+    .footer_menu {
+
+        margin-top: 11px;
+        /* padding: auto; */
+
+    }
+    
+    footer ul {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    footer li {
+
+        width: auto;
+
+    }
+
+    footer .menu_element_1on4, footer .menu_element_3on4, footer .menu_element_4on4 {
+
+        margin-right: 15px;
+    }
+
+    footer .menu_element_2on4 {
+
+        margin-right: 45px !important;
+    }
+
+    footer .menu_element_4on4 {
+
+        margin-left: -20px !important;
+    }
+    
+    footer i {
+
+        margin-right: 15px;
+    }
 
 }
+
+/** **************************************************************************************************** */
+/** ************************************    END  LAPTOP MEDIA QUERIES     ****************************** */
+/** **************************************************************************************************** */
