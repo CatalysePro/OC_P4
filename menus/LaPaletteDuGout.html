@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- defines the encoding standard used for interpreting special & multilingual characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- defines the view configuration (viewport) for mobile phones and indicates to the browser 
+        to adapt the width of the webpage at the width of the device screen at an initial scale of 1-->
+
+    <title>Ohmyfood La palette du goût</title> <!-- Tab title appearing on the top of the tab ... 
+        an icon could be added next to this title via another code line-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- indicates that there is a preconnection to a website when the page is downloaded; here the font database of Google -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- complementary to the previous line by specifying that the request of the font dowloading can be done even if 
+        the webpage(s) domain or protocol(s) are différent (crossorigin)  -->
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- here it indicates the external resource and the transmission modalities 
+            for the icons to be  mentioned in the html code and to be treated by the css style sheet -->
+
+    <link href="https : //fonts.googleapis.com/css2?family= Roboto+Mono:wght@500 & display =swap" rel="stylesheet">
+    <!--link for a specific font here : Roboto font used for tyhe entire main_container-->
+        
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!--link for a specific font here : Shrikhand font of the logo used for the loader-->
+
+
+    <link rel="stylesheet" href="../css/menu_style.css"> 
+                                <!-- Refers to style file which will be applied -->
+
+   
+
+</head>
+
+
+
+<body>
+      
+
+    <div class="main_container"> 
+
+        <header>  
+            <div class="arrow_back"><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+            <a href="../index.html" class="logo"><img src="../images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"></a>
+            
+        <!-- <div> </div> -->
+        </header> 
+
+        <div class="central_section"> 
+
+            <div class="presentation_section">
+
+            <div class="image_restaurant">
+                <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat cuisine moderne assiette ronde sur table pour deux vue en perspective tenue par une main de femme dans un restaurant français à Paris">
+            </div> <!-- close image_restaurant -->
+           
+            <div class="full_menu">
+
+                <div class="menu_title_block">
+                    <h2 class="restaurant_name">La palette du goût</h2>
+                    <div class="hearts_pair">
+                        <div class="empty_heart"><i class="fill_it fa-regular fa-heart fa-2xl"></i></div>
+                        <div class="full_heart"><i class="leave_it fa-solid fa-heart fa-2xl"></i></div>
+                    </div>
+
+                </div><!-- close menu_title_block -->
+
+                <div class="details_menu">
+
+                    <div class="dish_block starters_block">
+
+                        <h3 class="dish_title starters_title">ENTREES</h3>
+                        
+                        
+                        <div class="dish_list starters_list">
+
+                            <div class="dish_choice starter_choice_1on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name starter_1_name">Fricassée d'escargots</h4>
+                                    <p class="dish_description starter_1_description">Au piment d'Espelette</p>
+                                </div> <!-- close dish_presentation -->
+
+                                <div class="dish_selection">
+                                    <span class="dish_price starter_1_price">25€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close starter_choice_1on3 -->
+
+
+                            <div class="dish_choice starter_choice_2on3">
+ 
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name starter_2_name">Foie gras de canard mi-cuit</h4>
+                                    <p class="dish_description starter_2_description">Et ses copeaux de truffe noire</p>
+                                </div> <!-- close dish_presentation -->
+
+                                <div class="dish_selection">
+                                    <span class="dish_price starter_2_price">35€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close starter_choice_2on3 -->
+
+
+                            <div class="dish_choice starter_choice_3on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name starter_3_name">Œuf au plat</h4>
+                                    <p class="dish_description starter_3_description">Assaisonné à la truffe sur lit de caviar</p>
+                                </div> <!-- close dish_presentation -->
+
+                                <div class="dish_selection">
+                                    <span class="dish_price starter_3_price">20€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close starter_choice_3on3 -->
+
+                        </div><!-- close starters_list -->
+
+                    </div><!-- CLOSE starters_BLOCK -->
+
+
+                    <div class="dish_block main_courses_block">
+
+                        <h3 class="dish_title main_courses_title">PLATS</h3>
+                        
+                        
+                        <div class="dish_list main_courses_list">
+
+                            <div class="dish_choice main_course_choice_1on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name main_course_1_name">Filet de bœuf aux herbes</h4>
+                                    <p class="dish_description main_course_1_description">Accompagné de sa ribambelle de légumes</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price main_course_1_price">40€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close main_course_choice_1on3 -->
+
+
+                            <div class="dish_choice main_course_choice_2on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name main_course_2_name">Parmentier de queue de bœuf</h4>
+                                    <p class="dish_description main_course_2_description">À la truffe noire sur sa purée de panais</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price main_course_2_price">35€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close main_course_choice_2on3 -->
+
+
+                            <div class="dish_choice main_course_choice_3on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name main_course_3_name">Filet de turbot</h4>
+                                    <p class="dish_description main_course_3_description">Aux agrumes</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price main_course_3_price">44€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close main_course_choice_3on3 -->
+
+                        </div><!-- close main_courses_list -->
+
+                    </div><!-- CLOSE main_courses_BLOCK -->
+
+
+                    <div class="dish_block desserts_block">
+
+                        <h3 class="dish_title desserts_title">DESSERTS</h3>
+
+                        <div class="dish_list desserts_list">
+
+                            <div class="dish_choice dessert_choice_1on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name dessert_1_name">Paris-Brest</h4>
+                                    <p class="dish_description dessert_1_description">Revisité</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price dessert_1_price">18€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close dessert_choice_1on3 -->
+                            
+                            <div class="dish_choice dessert_choice_2on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name dessert_2_name">Macaron au chocolat d'exception</h4>
+                                    <p class="dish_description dessert_2_description">Et glace à la vanille de Madagascar</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price dessert_2_price">22€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close dessert_choice_2on3 -->
+
+
+                            <div class="dish_choice dessert_choice_3on3">
+
+                                <div class="dish_presentation">
+                                    <h4 class="dish_name dessert_3_name">Mousse au chocolat 
+                                        </h4>
+                                    <p class="dish_description dessert_3_description">Au piment d'Espelette et à la truffe noire</p>
+                                </div> <!-- close dish_presentation -->
+                                
+                                <div class="dish_selection">
+                                    <span class="dish_price dessert_3_price">23€</span>
+                                    <div class="check_module"><i class="check_box fa-regular fa-circle-check"></i></div>
+                                </div><!-- close dish_selection -->
+
+                            </div> <!-- close dessert_choice_3on3 -->                            
+
+                        </div><!-- close desserts_list -->
+
+                    </div><!-- CLOSE desserts_BLOCK -->
+
+                </div> <!-- close details_menu -->
+
+            </div> <!-- close full_menu -->
+        </div> <!-- CLOSE presentation_section -->
+
+
+        <div class="order_module">
+            <button class="order_btn">Commander</button>
+        </div> <!-- close order_button -->
+
+
+        </div> <!-- CLOSE CENTRAL_SECTION -->
+
+        <footer> 
+            <div class="footer_elements"> 
+                   
+                <a href="../index.html" class="logo"><img src="../images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"></a>
+
+            <div class="footer_menu">
+                <nav> 
+                    
+                    <ul>
+                        <li class="menu_element menu_element_1on4"><a href="#"><i class="footer_icon_1 fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li class="menu_element menu_element_2on4"><a href="#"><i class="footer_icon_2 fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                        <li class="menu_element menu_element_2on4"><a href="#">Mentions légales</a></li>
+                        <li class="menu_element menu_element_4on4"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!--close footer_menu -->
+
+            </div> <!--CLOSE footer_elements -->
+
+        </footer> 
+
+    </div> <!--CLOSE MAIN-CONTAINER -->
+
+</body>
+
+</html>
