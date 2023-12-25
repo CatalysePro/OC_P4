@@ -9,7 +9,7 @@ Requiered skills - Languages: HTML & Sass/Scss (Javascript forbidden)
 
 Mandatory resources: images & models on figma.com (online vector graphics editor and prototyping tool)
 
-Requiered delivery: 5 webpages (homepage + 4 menu pages)
+Requiered deliverable: 5 webpages (homepage + 4 menu pages)
 
 Focus : modern CSS effects and responsivity :
             - on 3 breakpoints view (mobile (min 360px), tablet (min 768px), Laptop (min 1024))
@@ -18,6 +18,8 @@ Focus : modern CSS effects and responsivity :
 Specific: All the work to be done is imposed except for the homeapge loader animation and the tablet views
 
 Nota bene: Loader block codes is an original production subject to copyrights
+
+GITHUB PAGES LINK FOR VIEWING THE DELIVERABLE : https://catalysepro.github.io/OC_P4/
 
 
 Français:
@@ -38,3 +40,4 @@ Spécifique : Tout le travail à faire est imposé sauf pour l'animation de char
 
 Nota bene : les codes de l'animation de la page d'accueil est une production originale soumise à des droits.
 
+LIEN GITHUB PAGES POUR VOIR LE LIVRABLE : https://catalysepro.github.io/OC_P4/
